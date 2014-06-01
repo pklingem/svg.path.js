@@ -1,4 +1,4 @@
-/** svg.path.js - v0.6.0 - 2014-02-04
+/** svg.path.js - v0.6.0 - 2014-07-19
  * http://otm.github.io/svg.path.js/
  * Copyright (c) 2014 Nils Lagerkvist; Licensed under the  MIT license /
  */
@@ -212,7 +212,8 @@
 
 			this._lastSegment = lastSegment;	
 
-			return this.attr('d', this.attr('d') + str);
+			var d = this.attr('d') || '';
+			return this.attr('d', d + str);
 		}
 	});
 
